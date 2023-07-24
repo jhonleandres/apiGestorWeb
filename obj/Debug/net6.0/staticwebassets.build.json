@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kd2CsLXoykWvEm8bzE7eFCwr4ZWuF8RUEIPELMCFPPc=",
+  "Source": "apiGestorWeb",
+  "BasePath": "_content/apiGestorWeb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
