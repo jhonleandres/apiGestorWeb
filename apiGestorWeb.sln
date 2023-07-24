@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apiGestorWeb", "apiGestorWeb.csproj", "{DAFB43FF-684E-45B7-B35B-4CFC64B8F794}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAFB43FF-684E-45B7-B35B-4CFC64B8F794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAFB43FF-684E-45B7-B35B-4CFC64B8F794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAFB43FF-684E-45B7-B35B-4CFC64B8F794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAFB43FF-684E-45B7-B35B-4CFC64B8F794}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {854CA22F-3CD3-41D1-9451-00F910D2F7F3}
+	EndGlobalSection
+EndGlobal

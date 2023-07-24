@@ -1,0 +1,26 @@
+image: microsoft/dotnet:latest
+
+stages:
+  - build
+  - test
+
+variables:
+  project: "apiGestorWeb.csproj"
+
+before_script:
+  - "dotnet restore"
+
+build:
+  stage: build
+  variables:
+    build_path: "./$project"
+  script:
+    - "dotnet build"
+
+test:
+  stage: test
+  variables:
+    test_path: "$project/test/$project.Tests"
+  script:
+    - "cd $test_path"
+    - "dotnet test"
