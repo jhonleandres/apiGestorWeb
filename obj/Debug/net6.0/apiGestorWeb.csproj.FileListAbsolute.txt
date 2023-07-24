@@ -38,3 +38,4 @@ C:\Sistemas\apiGestorWeb\obj\Debug\net6.0\refint\apiGestorWeb.dll
 C:\Sistemas\apiGestorWeb\obj\Debug\net6.0\apiGestorWeb.pdb
 C:\Sistemas\apiGestorWeb\obj\Debug\net6.0\apiGestorWeb.genruntimeconfig.cache
 C:\Sistemas\apiGestorWeb\obj\Debug\net6.0\ref\apiGestorWeb.dll
+C:\Sistemas\apiGestorWeb\bin\Debug\net6.0\nunit.framework.dll
