@@ -1,26 +1,37 @@
-image: microsoft/dotnet:latest
+name: pull request
 
-stages:
-  - build
-  - test
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+    - '**.cs'
+    - '**.csproj'
 
-variables:
-  project: "apiGestorWeb.csproj"
+env:
+  DOTNET_VERSION: '6.0.x' # set this to the dot net version to use
 
-before_script:
-  - "dotnet restore"
+jobs:
+  validate:
+    name: build-${{matrix.os}}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
 
-build:
-  stage: build
-  variables:
-    build_path: "./$project"
-  script:
-    - "dotnet build"
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
 
-test:
-  stage: test
-  variables:
-    test_path: "$project/test/$project.Tests"
-  script:
-    - "cd $test_path"
-    - "dotnet test"
+    - name: Install dependencies
+      run: |
+        dotnet restore
+      
+    - name: Build
+      run: |
+        dotnet build --configuration Release --no-restore
+
+    - name: Test
+      run: dotnet test
